@@ -12,11 +12,12 @@
     });
 }
 
-var myPromise = sum(10, 5) // 10 + 5 = 15
+var myPromise = sum(10, 5); // 10 + 5 = 15
 myPromise.then(function(res) {
     $('#output').append('<p>10 + 5 = '+res+'</p>'); // div id="output"
 })
 .catch(function(err) {
-    document.write(err.message);
-    console.log(err.message);
+    document.getElementById("output").innerHTML=err.message;
+    //document.write(err.message);
+    //console.log(err.message);
 });

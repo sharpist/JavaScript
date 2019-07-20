@@ -13,12 +13,14 @@ var event = {
     room: room // не включает метод toJSON
 };
 // вывод
-alert(JSON.stringify(event));
+alert(JSON.stringify(event, "", 4));
 /*
     {
-        "title":"Конференция",
-        "date":"2019-10-20T15:00:00.000Z",
-        "room":{"number":109}
+        "title": "Конференция",
+        "date": "2019-10-20T15:00:00.000Z",
+        "room": {
+            "number": 109
+        }
     }
 */
 
@@ -39,11 +41,11 @@ var event2 = {
     room: room2 // включает метод toJSON
 };
 // вывод
-alert(JSON.stringify(event2));
+alert(JSON.stringify(event2, "", 4));
 /*
     {
-        "title":"Конференция",
-        "date":"2019-10-20T15:00:00.000Z",
-        "room":109
+        "title": "Конференция",
+        "date": "2019-10-20T15:00:00.000Z",
+        "room": 109
     }
 */

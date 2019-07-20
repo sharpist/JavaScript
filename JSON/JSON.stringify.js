@@ -4,7 +4,8 @@
     window: window // преобразовать невозможно!
 };
 // преобразование значения в JSON-строку
-var str = JSON.stringify(event, ["title", "date"]); // массив свойств, подлежащих сериализации
+var str = JSON.stringify(event, ["title", "date"], 4); // 2-й параметр: массив свойств, подлежащих сериализации
+// 3-й параметр: eсли число – количество пробелов к уровням вложенности в JSON, если строка – вставляется эта строка
 /*
 var str = JSON.stringify(event, function(key, value) { // свойство с названием window игнорируется
     return (key == 'window') ?

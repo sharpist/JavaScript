@@ -109,7 +109,7 @@ var aggregate_1 = people.reduce(function (item1, item2) {
 // ES6 синтаксис
 /* здесь возвращаемый литерал объекта заключён в (),
 иначе {} будут считаться обозначающими тело функции */
-let aggregate_2 = people.reduce((a,b) => ({name: '', age: a.age + b.age}));
+let aggregate_2 = people.reduce((a, b) => ({name: '', age: a.age + b.age}));
 
 // вывод
 out("общий возраст"); 

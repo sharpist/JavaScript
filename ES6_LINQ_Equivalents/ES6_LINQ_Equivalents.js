@@ -131,7 +131,7 @@ function compare(a, b) {
     return 0; // взаимный порядок не имеет значения
 }
 // ES6 синтаксис
-let orderByName_2 = people.sort((a, b) => a.name > b.name ? 1 : 0);
+let orderByName_2 = people.sort((a, b) => a.name > b.name ? 1 : -1);
 
 // вывод
 out("упорядочить по имени"); 
@@ -153,16 +153,14 @@ var namesOver25Order_1 = people
 .map(function (person) {
     return person.name;
 })
-.sort(compare2);
-function compare2(a, b) {
-    if (a > b) return 1;
-    if (a < b) return -1;
-}
+.sort(function (a, b) {
+	return a > b ? 1 : -1;
+});
 // ES6 синтаксис
 let namesOver25Order_2 = people
     .filter(p => p.age > 25)
     .map(p => p.name)
-    .sort((a, b) => a > b ? 1 : 0);
+    .sort((a, b) => a > b ? 1 : -1);
 
 // вывод
 out("имена всех людей старше 25 упорядочены по убыванию");

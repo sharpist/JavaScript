@@ -154,7 +154,7 @@ var namesOver25Order_1 = people
     return person.name;
 })
 .sort(function (a, b) {
-	return a > b ? 1 : -1;
+    return a > b ? 1 : -1;
 });
 // ES6 синтаксис
 let namesOver25Order_2 = people

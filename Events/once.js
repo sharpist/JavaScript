@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
         var handler = () => {
             console.log('Content loaded');
         }
-        // отработает только один раз                   !!!
+        // РѕС‚СЂР°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЂР°Р·                   !!!
         btn.addEventListener('click', handler, {once: true});
     </script>
 </body>
